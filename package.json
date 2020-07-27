@@ -1,28 +1,30 @@
 {
-  "name": "url-shortner",
+  "name": "url-shortner-service",
   "version": "1.0.0",
-  "description": "url shortner",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "dev": "nodemon index.js"
+    "start": "nodemon app.js"
   },
-  "author": "Amey Bhide",
+  "author": "amey bhide",
   "license": "ISC",
   "dependencies": {
-    "atob": "^2.1.2",
-    "base-62": "^1.0.1",
-    "base62": "^2.0.1",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
-    "btoa": "^1.2.1",
+    "connect-flash": "^0.1.1",
     "crypto": "^1.0.1",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.3",
     "express": "^4.17.1",
-    "jquery": "^3.5.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
     "mongoose": "^5.9.25",
-    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
     "shortid": "^2.2.15",
     "view-engine": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
